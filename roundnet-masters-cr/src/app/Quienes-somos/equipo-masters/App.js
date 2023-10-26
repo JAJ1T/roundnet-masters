@@ -4,7 +4,7 @@ import ImageGallery from './ImageGallery';
 function App() {
     return (
         <div className="App">
-            <h1>Mi Proyecto</h1>
+            <h1>Equipo Masters</h1>
             <ImageGallery />
         </div>
     );
