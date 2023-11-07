@@ -1,0 +1,105 @@
+/* Configuración de caja para todos los elementos, incluyendo pseudo-elementos */
+*, 
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+/* Restablecer márgenes y rellenos en todos los elementos */
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+/*Fuente principal para el cuerpo de la página */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilizar el elemento principal con efecto de paralaje */
+main 
+{
+  height: 100vh; /* Establecer altura al 100% de la ventana */
+  overflow-x: hidden; /* Ocultar la barra de desplazamiento horizontal */
+  overflow-y: auto; /* Agregar una barra de desplazamiento vertical si es necesario */
+  perspective: 2px; /* Configurar perspectiva para efecto de paralaje */
+}
+
+/* Estilizar las secciones en la página */
+section 
+{
+  transform-style: preserve-3d; /* Conservar la transformación 3D */
+  position: relative; /* Posición relativa para alinear contenido */
+  height: 100vh; /* Establecer altura al 100% de la ventana */
+  display: flex; /* Mostrar contenido como flexbox */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  color: #FFF; /* Color de texto blanco */
+}
+
+/* Estilizar el título h1 dentro de las secciones */
+section h1
+{
+  text-align: center; /* Centrar el texto horizontalmente */
+  font-size: 4rem; /* Tamaño de fuente */
+  font-family: "Poppins", sans-serif; /* Fuente personalizada */
+}
+
+/* Estilizar la sección sin efecto de paralaje */
+.no-parallax 
+{
+  background-color:  #f9d42d; /* Fondo de color amarillo */
+  z-index: 999; /* Capa z para estar por encima de otras secciones */
+}
+
+/* Estilizar el título h1 dentro de secciones con efecto de paralaje */
+.parallax h1 
+{
+  width: 70%; /* Ancho del título */
+  font-size: 2rem; /* Tamaño de fuente reducido */
+}
+
+/* Establecer el efecto de paralaje utilizando pseudo-elemento ::after */
+.parallax::after 
+{
+  content: " "; /* Agrega contenido al pseudo-elemento */
+  position: absolute; /* Posición absoluta para cubrir toda la sección */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5); /* Crear el efecto de paralaje */
+  background-size: 100%; /* Ajustar el tamaño del fondo */
+  z-index: -1; /* Capa z detrás del contenido */
+}
+
+/* Fondo de la primera sección con efecto de paralaje */
+.bg1::after
+{
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("Inicio.jpg"); /* Fondo con degradado y una imagen */
+  background-size: cover; /* Ajustar el tamaño del fondo */
+}
+
+/*  Fondo de la segunda sección con efecto de paralaje */
+.bg2::after
+{
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0 )), url("equipo.jpg"); /* Fondo con degradado y una imagen */
+  background-size: cover; /* Ajustar el tamaño del fondo */
+}
+
+/* Estilos adicionales para pantallas con un ancho mínimo de 768px */
+@media screen and (min-width: 768px) 
+{
+  section h1 
+  {
+    font-size: 6rem; /* Aumentar el tamaño de fuente para pantallas grandes */
+  }
+  
+  .parallax h1 
+  {
+    font-size: 4rem; /* Restablecer el tamaño de fuente para pantallas grandes */
+  }
+}
+  
