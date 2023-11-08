@@ -1,0 +1,43 @@
+.intro {
+  height: 100vh;
+  background-color: #f9d42d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.intro h1 {
+  text-align: center; /* Centrar el texto horizontalmente */
+  font-size: 2rem; /* Tamaño de fuente */
+  font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+  color: white;
+}
+
+.parallax {
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+.parallax::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax h1 {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.parallax.bg1::after {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/images/nosotros/Inicio.jpg');
+  background-size: cover;
+}
