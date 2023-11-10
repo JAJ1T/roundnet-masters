@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "next-images": "^1.8.5",
+    "react-parallax": "^3.5.1"
+  }
+}

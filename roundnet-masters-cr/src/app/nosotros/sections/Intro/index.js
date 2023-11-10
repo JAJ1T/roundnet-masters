@@ -1,4 +1,5 @@
 import React from 'react';
+import next from 'next/image';
 import styles from './Intro.module.css' 
 
 const Intro = () => {
@@ -10,13 +11,13 @@ const Intro = () => {
 
       <div className={`${styles.parallax} ${styles.bg1}`}>
         <h1>
-          &quot;Esta es la historia de una idea que nació con la visión de
+          &quot;Roundnet Masters CR una idea que nació con la visión de
           convertirse en una realidad para nuestro país y estimular la pasión
           por el deporte de roundnet en Costa Rica.&quot;
         </h1>
       </div>
 
-      <div className="parallax bg2">
+      <div className={`${styles.parallax} ${styles.bg2}`}>
         <h1>Equipo Masters</h1>
       </div>
     </section>

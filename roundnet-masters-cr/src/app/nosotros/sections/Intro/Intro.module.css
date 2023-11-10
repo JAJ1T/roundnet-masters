@@ -33,11 +33,20 @@
 .parallax h1 {
   color: white;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   position: relative;
   z-index: 1;
 }
 
 .parallax.bg1::after {
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/images/nosotros/Inicio.jpg');
+  background-size: cover;
+}
+
+.parallax.bg2::after
+{ 
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0  , .7)), url('/images/nosotros/Nosotros.jpg');
   background-size: cover;
 }

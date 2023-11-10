@@ -1,0 +1,24 @@
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .imagenCircular {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Ajusta la imagen a la forma circular */
+    animation: rotar 4s linear infinite; /* Aplica la animación de rotación */
+  }
+  
+  @keyframes rotar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
