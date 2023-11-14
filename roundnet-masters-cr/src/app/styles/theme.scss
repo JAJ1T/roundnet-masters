@@ -1,10 +1,11 @@
-/* styles.css */
-body.light-mode {
-  background-color: white;
-  color: black;
+@import '@/app/styles/variables.scss';
+
+.light-mode {
+  background-color: $background-color-light;
+  color: $brand-text-light;
 }
 
 body.dark-mode {
-  background-color: black;
-  color: white;
+  background-color: $background-color-dark;
+  color: $brand-text-dark;
 }

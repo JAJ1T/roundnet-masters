@@ -4,5 +4,14 @@
   margin: 0 auto;
   max-width: 768px;
   padding: 64px 32px;
-  color: $brand-text;
+
+  .light-mode {
+    background-color: $background-color-light;
+    color: $brand-text-light;
+  }
+
+  .dark-mode {
+    background-color: $background-color-dark;
+    color: $brand-text-dark;
+  }
 }
