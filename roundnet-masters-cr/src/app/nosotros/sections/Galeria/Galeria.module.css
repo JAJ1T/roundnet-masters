@@ -1,24 +1,14 @@
-.galeria {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .imagenCircular {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Hace la imagen circular */
-    object-fit: cover; /* Ajusta la imagen a la forma circular */
-    animation: rotar 4s linear infinite; /* Aplica la animación de rotación */
-  }
-  
-  @keyframes rotar {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+/* Galeria.module.css */
+.sliderContainer {
+  /* Estilos para el contenedor del carrusel */
+  /* ... */
+}
+
+.image {
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  overflow: hidden; /* Asegura que la imagen se ajuste al círculo */
+  width: 200px; /* Ajusta el tamaño de la imagen */
+  height: 200px; /* Ajusta el tamaño de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste dentro del círculo */
+  margin: 10px; /* Espacio entre las imágenes */
+}

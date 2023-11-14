@@ -1,30 +1,44 @@
 import React from 'react';
-import './Galeria.module.css'; // Asegúrate de crear un archivo CSS para estilos
-import images from '.imagenes/image';
+import Image from 'next/image';
+import Slider from 'react-slick';
+import styles from './Galeria.module.css';
+
 const Galeria = () => {
-  // Suponiendo que tienes las imágenes importadas o disponibles localmente
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+
   const images = [
-    'imagen1.jpg',
-    'imagen2.jpg',
-    'imagen3.jpg',
-    'imagen4.jpg',
-    'imagen5.jpg',
-    'imagen6.jpg',
-    'imagen7.jpg',
+    '/imagenes/image1.jpg',
+    '/imagenes/image2.jpg',
+    '/imagenes/image3.jpg',
+    '/imagenes/image4.jpg',
+    '/imagenes/image5.jpg',
+    '/imagenes/image6.jpg',
+    '/imagenes/image7.jpg'
   ];
 
   return (
-    <section className="galeria">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          className="imagenCircular" // Aplica la clase para hacerla circular
-          src={image}
-          alt={`imagen-${index + 1}`}
-        />
-      ))}
-    </section>
+    <div className={styles.sliderContainer}>
+      <h1>Imágenes Rotativas</h1>
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <Image
+              src={image}
+              alt={`Image ${index + 1}`}
+              width={500}
+              height={300}
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
-}
+};
 
 export default Galeria;
