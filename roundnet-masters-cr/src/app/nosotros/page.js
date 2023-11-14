@@ -1,9 +1,11 @@
+import RootLayout from '../components/RootLayout';
+
 const Nosotros = () => {
   return (
-    <main>
-      nosotros
-    </main>
+    <RootLayout>
+      <main>nosotros</main>
+    </RootLayout>
   );
-}
- 
+};
+
 export default Nosotros;

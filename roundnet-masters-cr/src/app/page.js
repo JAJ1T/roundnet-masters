@@ -1,9 +1,11 @@
-
+import RootLayout from "../app/components/RootLayout";
 
 const Home = () => {
   return (
+    <RootLayout>
     <main>
     </main>
+    </RootLayout>
     // <div>
     //   <Head1 />
 
