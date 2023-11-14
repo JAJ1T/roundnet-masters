@@ -6,7 +6,7 @@ import styles from './Header.module.scss';
 
 const Header = () => {
   return (
-    <ThemeBackground element="div">
+    <ThemeBackground element="div" accent={true}>
       <header className={styles.header}>
         <Logo />
         <nav>

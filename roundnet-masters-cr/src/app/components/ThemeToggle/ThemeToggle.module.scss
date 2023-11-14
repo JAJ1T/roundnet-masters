@@ -1,0 +1,20 @@
+@import 'src/app/styles/variables.scss';
+.theme-toggle {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0.5rem ;
+  transition: color 500ms ease-in-out;
+
+  &-icon {
+    font-size: 32px;
+  }
+
+  &.dark {
+    color: $brand-accent-light;
+  }
+
+  &.light {
+    color: $brand-accent-dark;
+  }
+}

@@ -13,7 +13,7 @@ const Logo = () => {
     <Image
         src={isDarkTheme ? LogoDark : LogoLight}
         alt="Logo"
-        width={'auto'}
+        width={254}
         height={100}
       />
   );
