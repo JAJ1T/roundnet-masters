@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LogoLight from '../../../../public/images/logo-light.png';
 
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 
 const Header = () => {

@@ -1,11 +1,25 @@
-import styles from './Footer.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-solid-svg-icons';
+import styles from './Footer.module.scss';
+
+const FacebookLink = () => {
+  return (
+    <a
+      href="https://es-la.facebook.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon icon={faFacebook} size='lg' />
+    </a>
+  );
+};
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div class="box-container">
         <div class="box">
-          <h5>Informacion del contacto</h5>
+          <h2>Informacion del contacto</h2>
           <a href="#">
             {' '}
             <i class="fas fa-envelope"></i> info.roundnetmasters@gmail.com{' '}
@@ -20,13 +34,14 @@ const Footer = () => {
 
       {/*Footer redes sociales*/}
       <div class="share">
-        <h1>Siguenos en nuestras redes!!!</h1>
-        <br />
-        <a
+        <h3>Siguenos en nuestras redes!!!</h3>
+        <FacebookLink />
+        
+        {/* <a
           href="#"
           class="fab fa-facebook-f"
           onclick="window.open('https://es-la.facebook.com/', '_blank')"
-        ></a>
+        ></a> */}
         <a
           href="#"
           class="fab fa-instagram"
