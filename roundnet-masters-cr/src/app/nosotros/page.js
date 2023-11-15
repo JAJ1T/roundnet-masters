@@ -1,5 +1,11 @@
+import Carousel from '@/app/components/Carousel';
+
 const Nosotros = () => {
-  return <main>nosotros</main>;
+  return (
+    <main>
+      <Carousel />
+    </main>
+  );
 };
 
 export default Nosotros;
