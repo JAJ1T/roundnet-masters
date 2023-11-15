@@ -1,10 +1,41 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/*----------------------------------*/
+/* fonts */
+/*----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+/* Pagina principal */
+:root{
+    --Yellow:#f9d42d;
+    --black:#1D2F3D;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+    transition:width none;
+    font-family: "Poppins", sans-serif;
+}
+
+
+h1{
+	color: var(--black)
+}
+
+
+h6{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 10px;
+	text-align: center;
+	margin-left: 3rem;
+}
+
+p{
+	color: black;
 }
