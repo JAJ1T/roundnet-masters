@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/app/contexts/ThemeContex';
+import { AuthProvider } from '@/app/contexts/AuthContext';
 import Footer from '@/app/components/Footer';
 import Header from '@/app/components/Header';
 
@@ -14,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="root-layout">
-        <ThemeProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <AuthProvider>
+          <ThemeProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

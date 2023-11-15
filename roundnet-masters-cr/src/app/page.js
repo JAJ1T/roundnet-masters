@@ -1,6 +1,11 @@
 const Home = () => {
+
   return (
+
     <main>
+      
+
+
     </main>
     // <div>
     //   <Head1 />
