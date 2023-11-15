@@ -1,6 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
-import Slider from 'react-slick';
+'use client';
 import styles from './Galeria.module.css';
 
 const Galeria = () => {

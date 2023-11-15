@@ -1,6 +1,6 @@
-import React from 'react';
-import next from 'next/image';
-import styles from './Intro.module.css' 
+'use client';
+import Image from 'next/image';
+import styles from './Intro.module.css';
 
 const Intro = () => {
   return (
