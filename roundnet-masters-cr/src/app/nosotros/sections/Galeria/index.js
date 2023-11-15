@@ -1,44 +1,37 @@
-import React from 'react';
-import Image from 'next/image';
-import Slider from 'react-slick';
-import styles from './Galeria.module.css';
+// Importa el componente Carousel desde la ruta especificada
+import Carousel from '@/app/components/Carousel';
 
+// Importa las imágenes desde la carpeta de imágenes
+import Axsel1 from './imagenes/imagen3.jpg';
+import Axsel2 from './imagenes/imagen3.2.jpg';
+
+import Tony1 from './imagenes/imagen4.jpg';
+import Tony2 from './imagenes/imagen4.2.jpg';
+
+// Define el componente Galeria
 const Galeria = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+  // Crea un array de imágenes. Puedes agregar más imágenes aquí, simplemente
+  // importándolas como se hizo con Axsel1 y Axsel2, y luego añadiéndolas al array.
+  // Por ejemplo: const images = [Axsel1, Axsel2, Axsel3, Axsel4];
+  const images = [Axsel1, Axsel2];
+  const images2 = [Tony1, Tony2];
 
-  const images = [
-    '/imagenes/image1.jpg',
-    '/imagenes/image2.jpg',
-    '/imagenes/image3.jpg',
-    '/imagenes/image4.jpg',
-    '/imagenes/image5.jpg',
-    '/imagenes/image6.jpg',
-    '/imagenes/image7.jpg'
-  ];
-
+  // Renderiza el componente Carousel con las imágenes proporcionadas
   return (
-    <div className={styles.sliderContainer}>
-      <h1>Imágenes Rotativas</h1>
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <Image
-              src={image}
-              alt={`Image ${index + 1}`}
-              width={500}
-              height={300}
-            />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <section>
+      <Carousel data={images} dataType="images" />
+
+      {/**
+       * puede tener más de un carrusel en la misma página, simplemente
+       * agregando otro componente Carousel con diferentes imágenes.
+       * Este es un ejemplo de cómo agregar un segundo carrusel.
+       * bórrelo cuando ya no lo necesite
+       */}
+
+      <Carousel data={images2} dataType="images" />
+    </section>
   );
 };
 
+// Exporta el componente Galeria para su uso en otras partes de la aplicación
 export default Galeria;

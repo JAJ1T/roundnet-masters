@@ -1,9 +1,9 @@
-import Carousel from '@/app/components/Carousel';
+import Galeria from './sections/Galeria';
 
 const Nosotros = () => {
   return (
     <main>
-      <Carousel />
+      <Galeria />
     </main>
   );
 };
