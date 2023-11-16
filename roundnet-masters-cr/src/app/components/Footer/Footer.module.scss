@@ -17,16 +17,14 @@
   }
 
   /* Informacion del contacto */
-
-
-  
-    .box h2 {
+.box{
+    h2 {
     font-size: 2rem;
     color: $brand-text-light;
     padding: 1rem 0;
   }
 
-  .box a {
+  a {
     display: block;
     font-size: 1rem;
     color: $brand-text-light;
@@ -35,9 +33,13 @@
 
     &:hover {
       transform: translateX(10px);
+      color: $brand-text-dark;
+    }
+    i {
+      color:$brand-text-dark;
     }
   }
-
+}
 
   /* Share */
   .share {
@@ -45,7 +47,7 @@
     text-align: center;
 
     h3 {
-      color: var($brand-text-light);
+      color: $brand-text-light;
     }
 
     a {

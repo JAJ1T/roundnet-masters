@@ -3,6 +3,7 @@ import styles from './Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons'
+import ThemeBackground from '../ThemeBackground';
 
 const Footer = () => {
   return (
@@ -11,10 +12,10 @@ const Footer = () => {
         <div className={styles.box}>
           <h2>Informacion del contacto</h2>
           <a href="#">
-            <FontAwesomeIcon icon={faEnvelope} /> info.roundnetmasters@gmail.com{' '}
+           <i><FontAwesomeIcon icon={faEnvelope} /></i> info.roundnetmasters@gmail.com{' '}
           </a>
           <a href="#">
-		  <FontAwesomeIcon icon={faPhoneFlip} /> Roundnet Masters Costa Rica: +506-7254-4097{' '}
+		  <i><FontAwesomeIcon icon={faPhoneFlip} /></i> Roundnet Masters Costa Rica: +506-7254-4097{' '}
           </a>
         </div>
       </div>

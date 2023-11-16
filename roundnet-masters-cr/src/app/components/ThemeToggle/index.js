@@ -20,6 +20,9 @@ const ThemeToggle = () => {
         size="xl"
         className={styles['theme-toggle-icon']}
       />
+
+
+      <div class='my-clase green'></div>
     </button>
   );
 };
