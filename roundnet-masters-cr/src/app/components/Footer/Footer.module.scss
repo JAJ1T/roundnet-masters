@@ -1,8 +1,9 @@
 @import '../../styles/variables.scss';
 
+/* Footer */
 .footer {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 100%;
   padding: 64px 32px;
 
   .light-mode {
@@ -13,5 +14,74 @@
   .dark-mode {
     background-color: $background-color-dark;
     color: $brand-text-dark;
+  }
+
+  /* Informacion del contacto */
+
+
+  
+    .box h2 {
+    font-size: 2rem;
+    color: $brand-text-light;
+    padding: 1rem 0;
+  }
+
+  .box a {
+    display: block;
+    font-size: 1rem;
+    color: $brand-text-light;
+    padding: .8rem 0;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+
+
+  /* Share */
+  .share {
+    padding: 1rem 0;
+    text-align: center;
+
+    h3 {
+      color: var($brand-text-light);
+    }
+
+    a {
+      display: inline-block;
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 23px;
+      color: #fff;
+      background: $brand-accent-light;
+      margin: 0.8rem 0.3rem;
+      border-radius: 50%;
+
+      &:hover {
+        background: $brand-text-light;
+      }
+
+      & > i {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+  }
+
+  /* Creditos finales */
+  .credit {
+    border-top: $border;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: $brand-text-light;
+    text-align: center;
   }
 }

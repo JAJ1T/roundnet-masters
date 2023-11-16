@@ -1,69 +1,44 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 import styles from './Footer.module.scss';
-
-const FacebookLink = () => {
-  return (
-    <a
-      href="https://es-la.facebook.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FontAwesomeIcon icon={faFacebook} size='lg' />
-    </a>
-  );
-};
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div class="box-container">
-        <div class="box">
+      <div className={styles.boxContainer}>
+        <div className={styles.box}>
           <h2>Informacion del contacto</h2>
           <a href="#">
-            {' '}
-            <i class="fas fa-envelope"></i> info.roundnetmasters@gmail.com{' '}
+            <FontAwesomeIcon icon={faEnvelope} /> info.roundnetmasters@gmail.com{' '}
           </a>
           <a href="#">
-            {' '}
-            <i class="fas fa-phone"></i> Roundnet Masters Costa Rica:
-            +506-7254-4097{' '}
+		  <FontAwesomeIcon icon={faPhoneFlip} /> Roundnet Masters Costa Rica: +506-7254-4097{' '}
           </a>
         </div>
       </div>
 
-      {/*Footer redes sociales*/}
-      <div class="share">
+      {/* Footer redes sociales */}
+      <div className={styles.share}>
         <h3>Siguenos en nuestras redes!!!</h3>
-        <FacebookLink />
-        
-        {/* <a
-          href="#"
-          class="fab fa-facebook-f"
-          onclick="window.open('https://es-la.facebook.com/', '_blank')"
-        ></a> */}
-        <a
-          href="#"
-          class="fab fa-instagram"
-          onclick="window.open('https://www.instagram.com/roundnetmasters', '_blank')"
-        ></a>
-        <a
-          href="#"
-          class="fab fa-youtube"
-          onclick="window.open('https://www.youtube.com/@RoundnetMasterscr', '_blank')"
-        ></a>
-        <a
-          href="#"
-          class="fab fa-tiktok"
-          onclick="window.open('https://www.tiktok.com/', '_blank')"
-        ></a>
+        <a href="#">
+          <i><FontAwesomeIcon icon={faFacebookF} /></i>
+        </a>
+        <a href="#">
+          <i><FontAwesomeIcon icon={faInstagram} /></i>
+        </a>
+        <a href="#">
+          <i><FontAwesomeIcon icon={faYoutube} /></i>
+        </a>
+		<a href="#">
+          <i><FontAwesomeIcon icon={faTiktok} /></i>
+        </a>
       </div>
 
-      {/*Creditos finales*/}
-      <div class="credit">
-        {' '}
-        Pagina web Oficial de Roundnet Masters Costa Rica | Todos los derechos
-        están reservados!!!{' '}
+      {/* Creditos finales */}
+      <div className={styles.credit}>
+        Pagina web Oficial de Roundnet Masters Costa Rica | Todos los derechos están reservados
       </div>
     </footer>
   );
