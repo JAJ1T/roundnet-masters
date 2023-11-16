@@ -1,53 +1,58 @@
-import React from 'react';
+import OutroStyles from './Outro.module.css';
+import img1 from './imagenes/img1.jpeg';
+import img2 from './imagenes/img2.jpeg';
+import img3 from './imagenes/img3.jpeg';
 
 const Outro = () => {
   return (
-    <section className="Outro">
-     <div className="card">
-        <div className="face front">
-            
-            <h3>Misión</h3>
+    <section className={OutroStyles.Outro}>
+      <div className={`${OutroStyles.card} ${OutroStyles.img1}`}>
+        <div className={OutroStyles.face + ' ' + OutroStyles.front}>
+          <h3>Misión</h3>
         </div>
-        <div className="face back">
-            <h3>Transformando el deporte</h3>
-            <p>Nuestra misión es generar los espacios que incentiven la práctica del Roundnet a nivel competitivo y ser un semillero de atletas de alto nivel, que disfruten, rían y compartan la energía que nos trae este nuevo deporte.
-            </p>
-            <div className="link">
-                <a href="#">Nuestra mirada al orizonte</a>
-            </div>
+        <div className={OutroStyles.face + ' ' + OutroStyles.back}>
+          <img src={img1} alt="Misión" />
+          <h3>Transformando el deporte</h3>
+          <p>
+            Nuestra misión es generar los espacios que incentiven la práctica
+            del Roundnet a nivel competitivo y ser un semillero de atletas de
+            alto nivel, que disfruten, rían y compartan la energía que nos trae
+            este nuevo deporte.
+          </p>
         </div>
-    </div>
+      </div>
 
-    <div className="card">
-        <div className="face front">
-            
-            <h3>Visión</h3>
+      <div className={`${OutroStyles.card} ${OutroStyles.img2}`}>
+        <div className={OutroStyles.face + ' ' + OutroStyles.front}>
+          <h3>Visión</h3>
         </div>
-        <div className="face back">
-            <h3>Camino a los juegos olimpicos</h3>
-            <p>La meta es llevar la displina de RoundNet a los Juegos Olímpicos y para esto la Federación Internacional de Roundnet y las Federaciones de cada país están colaborando y trabajando mano a mano. En RoundNet Masters queremos ser parte de este movimiento creando nuestra.</p>
-            <div className="link">
-                <a href="#">&quot;Estamos construyendo una catedral&quot;</a>
-            </div>
+        <div className={OutroStyles.face + ' ' + OutroStyles.back}>
+          <img src={img2} alt="Visión" />
+          <h3>Camino a los Juegos Olímpicos</h3>
+          <p>
+            La meta es llevar la disciplina de RoundNet a los Juegos Olímpicos y
+            para esto la Federación Internacional de Roundnet y las Federaciones
+            de cada país están colaborando y trabajando mano a mano. En RoundNet
+            Masters queremos ser parte de este movimiento creando nuestra.
+          </p>
         </div>
-    </div>
+      </div>
 
-    <div className="card">
-        <div className="face front">
-            
-            <h3>Lourdes Fernández</h3>
+      <div className={`${OutroStyles.card} ${OutroStyles.img3}`}>
+        <div className={OutroStyles.face + ' ' + OutroStyles.front}>
+          <h3>Lourdes Fernández</h3>
         </div>
-        <div className="face back">
-            <h3>Lourdes Fernández</h3>
-            <p>“Uniendo atletas en toda Costa Rica por medio del deporte y la diversion”
-            </p>
-            <div className="link">
-                <a href="#">La Vicionaria </a>
-            </div>
+        <div className={OutroStyles.face + ' ' + OutroStyles.back}>
+          <img src={img3} alt="Lourdes Fernández" />
+          <h3>Lourdes Fernández</h3>
+          <p>
+            “Uniendo atletas en toda Costa Rica por medio del deporte y la
+            diversión”
+          </p>
         </div>
-    </div>
+      </div>
     </section>
   );
-}
- 
+};
+
 export default Outro;
