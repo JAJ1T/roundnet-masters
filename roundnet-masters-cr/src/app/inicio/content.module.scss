@@ -1,0 +1,135 @@
+@import '/src/app/styles/variables';
+
+/*----------------------------------*/
+/* Estilizando la seccion introduccion */
+/*----------------------------------*/
+.introduccion {
+    background: url(./imagenes/foto1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative; 
+    z-index: -1;
+    padding:38rem 0;
+  
+    h2{
+        color: #fff;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    h5{
+        color: #fff;
+    }
+    
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor de "0.5" para ajustar la opacidad */
+    pointer-events: none; 
+    z-index: -1;
+  }
+  
+   div{
+    max-width: 60rem;
+    text-align: center;
+  
+  
+    h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-bottom: .7rem;
+    margin-left: 4rem;
+    font-weight: normal;
+  }
+}
+  
+   .btn{
+    margin-top: .7rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    margin-left: 2rem;
+    color:#fff;
+    background:#f9d42d;
+    font-size: 1rem;
+    font-weight: 500;
+  
+  
+  &:hover{
+    background:#1d2f3d;
+  }
+  }
+}
+  
+  
+  /*----------------------------------*/
+  /* Estilizando la seccion */
+  /*----------------------------------*/
+  .image{
+    width: 100%;
+  }
+  
+  .informacion{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  
+    .image{
+        flex:1 1 23rem;
+      }
+    
+   .content{
+    flex:1 1 30rem;
+ 
+    
+    h4{
+    color:#000000;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+  }
+  
+    h1{
+    font-size: 2.5rem;
+    color: #1d2f3d;
+  }
+  
+    p{
+    padding:1rem 0;
+    font-size: 1rem;
+    line-height: 2;
+    color: #1d2f3d;
+  }
+}
+}
+
+  
+  .videoTutorial{
+    position: relative;
+    padding-bottom: 46%;
+    height: 0;
+  
+  
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+  }
+}
+  
+  
+  .bannerFinal{
+      background: url(./imagenes/Roundnet2.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding:14rem 0;
+  }
