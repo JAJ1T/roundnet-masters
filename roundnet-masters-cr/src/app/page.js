@@ -1,10 +1,11 @@
+import Contents from "./inicio/content";
 const Home = () => {
 
   return (
 
     <main>
       
-
+      <Contents />
 
     </main>
     // <div>
