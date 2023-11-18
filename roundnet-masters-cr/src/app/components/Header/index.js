@@ -14,6 +14,7 @@ const Header = () => {
           <Link href="/nosotros">¿Quienes somos?</Link>
           <Link href="/roundnet">Roundnet</Link>
           <Link href="/eventos">Eventos</Link>
+          <Link href="/productos">Productos</Link>
         </nav>
         <ThemeToggle />
       </header>
