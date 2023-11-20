@@ -1,7 +1,9 @@
+import Content from "./content/content";
+
 const productos = () => {
     return ( 
         <>
-            <h1>Hola mundo!!!</h1>
+            <Content />
         </>
      );
 }
