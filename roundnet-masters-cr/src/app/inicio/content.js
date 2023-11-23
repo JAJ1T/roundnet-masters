@@ -110,7 +110,7 @@ const Contents = () => {
              layout="responsive"
              width={1000}
              height={500}
-             className={styles.imagen}
+             className={styles.image}
            />
          </div>
 
