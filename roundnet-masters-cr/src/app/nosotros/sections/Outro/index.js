@@ -1,5 +1,5 @@
 import OutroStyles from './Outro.module.css';
-import img1 from './imagenes/img1.jpeg';
+import img1 from './Outro.module.css';
 import img2 from './imagenes/img2.jpeg';
 import img3 from './imagenes/img3.jpeg';
 
@@ -11,7 +11,7 @@ const Outro = () => {
           <h3>Misión</h3>
         </div>
         <div className={OutroStyles.face + ' ' + OutroStyles.back}>
-          <img src={img1} alt="Misión" />
+          <img className={OutroStyles.img1} />
           <h3>Transformando el deporte</h3>
           <p>
             Nuestra misión es generar los espacios que incentiven la práctica
@@ -27,7 +27,7 @@ const Outro = () => {
           <h3>Visión</h3>
         </div>
         <div className={OutroStyles.face + ' ' + OutroStyles.back}>
-          <img src={img2} alt="Visión" />
+        <img className={OutroStyles.img1} />
           <h3>Camino a los Juegos Olímpicos</h3>
           <p>
             La meta es llevar la disciplina de RoundNet a los Juegos Olímpicos y
@@ -40,14 +40,24 @@ const Outro = () => {
 
       <div className={`${OutroStyles.card} ${OutroStyles.img3}`}>
         <div className={OutroStyles.face + ' ' + OutroStyles.front}>
-          <h3>Lourdes Fernández</h3>
+          <h3>Valores</h3>
         </div>
         <div className={OutroStyles.face + ' ' + OutroStyles.back}>
-          <img src={img3} alt="Lourdes Fernández" />
-          <h3>Lourdes Fernández</h3>
+        <img className={OutroStyles.img1} />
+          <h3>Nuestros valores</h3>
           <p>
-            “Uniendo atletas en toda Costa Rica por medio del deporte y la
-            diversión”
+          Respeto,
+
+          Trabajo en equipo,
+
+          Diversidad e inclusión,
+
+          Fair Play,
+
+          Pasión y diversión,
+
+          Responsabilidad social,
+ 
           </p>
         </div>
       </div>
