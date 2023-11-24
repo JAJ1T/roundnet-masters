@@ -69,13 +69,12 @@ const Contents = () => {
 
        {/*Video*/}
        <section className={styles.videoTutorial} id="video">
-         <iframe
-           src="https://www.youtube.com/embed/tc1pEqCGWnw?si=E0uR-O9QJ-0oLdoC"
-           title="YouTube video player"
-           frameborder="0"
-           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-           allowfullscreen
-         ></iframe>
+       <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/e6SEGgmQMQ0?si=4wXubvBK983Xkr08"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
        </section>
 
        {/*Informacion*/}
