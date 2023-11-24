@@ -11,10 +11,10 @@ const Footer = () => {
       <div className={styles.boxContainer}>
         <div className={styles.box}>
           <h2>Informacion del contacto</h2>
-          <a href="#">
+          <a href="mailto:info@roundnetmasters.com?subject=Escribe%20Aqui">
            <i><FontAwesomeIcon icon={faEnvelope} /></i> info.roundnetmasters@gmail.com{' '}
           </a>
-          <a href="#">
+          <a href="https://wa.me/50672544097">
 		  <i><FontAwesomeIcon icon={faPhoneFlip} /></i> Roundnet Masters Costa Rica: +506-7254-4097{' '}
           </a>
         </div>
@@ -23,16 +23,16 @@ const Footer = () => {
       {/* Footer redes sociales */}
       <div className={styles.share}>
         <h3>Siguenos en nuestras redes!!!</h3>
-        <a href="#">
+        <a href="https://www.facebook.com/profile.php?id=61552064259132">
           <i><FontAwesomeIcon icon={faFacebookF} /></i>
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/roundnetmasters/?hl=en">
           <i><FontAwesomeIcon icon={faInstagram} /></i>
         </a>
-        <a href="#">
+        <a href="https://www.youtube.com/@RoundnetMasterscr">
           <i><FontAwesomeIcon icon={faYoutube} /></i>
         </a>
-		<a href="#">
+		<a href="https://www.tiktok.com/@roundnet.masters">
           <i><FontAwesomeIcon icon={faTiktok} /></i>
         </a>
       </div>
