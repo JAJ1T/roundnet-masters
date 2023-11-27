@@ -1,5 +1,6 @@
 'use client'
 import React, { Component } from "react";
+import 'typeface-poppins'
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "moment/locale/es"; // Moment.js localización en español
@@ -16,9 +17,14 @@ const myEventsList = [
     end: new Date(),
   },
   {
-    title: "Reunión de trabajo",
-    start: new Date("2023-11-23T09:00:00"),
-    end: new Date("2023-11-23T10:00:00"),
+    title: "Evento en el C.T.P Alajuelita",
+    start: new Date("2023-11-29T11:00:00"),
+    end: new Date("2023-11-29T1:00:00"),
+  },
+  {
+    title: "Evento en la Escuela la Lia",
+    start: new Date("2023-11-30T11:00:00"),
+    end: new Date("2023-11-30T1:00:00"),
   },
 ];
 
