@@ -1,6 +1,6 @@
 'use client'
 import React, { Component } from "react";
-import 'typeface-poppins'
+import 'typeface-poppins';
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "moment/locale/es"; // Moment.js localización en español
