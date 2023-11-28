@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./content.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock, faPaperPlane, faShippingFast, faSmile } from '@fortawesome/free-solid-svg-icons';
+import Link from "next/link";
 
 const Content = () => {
     return ( 
@@ -88,11 +89,11 @@ const Content = () => {
 <div className={styles.container}>
 
    <h2 className={styles.presentacion}>Nuestros productos </h2>
-   <h3 className={styles.titulo}>Paquetes </h3>
+   <h3 className={styles.titulo}>Kits </h3>
 
    <div className={styles.productosContainer}>
 
-      <div className={styles.producto} data-name="p-1">
+      <Link className={styles.producto} href="/producto1">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -103,10 +104,10 @@ const Content = () => {
            />
          <h3>Aro de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </Link>
 
 
-      <div className={styles.producto} data-name="p-2">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -117,11 +118,11 @@ const Content = () => {
            />
          <h3>Bolas de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
 
-      <div className={styles.producto} data-name="p-3">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -132,10 +133,10 @@ const Content = () => {
            />
          <h3>Bolas profesionales de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-4">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -146,10 +147,10 @@ const Content = () => {
            />
          <h3>Aro profesional de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-5">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -160,10 +161,10 @@ const Content = () => {
            />
          <h3>Bolsa de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-6">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -174,7 +175,7 @@ const Content = () => {
            />
          <h3>Malla de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
    </div>
 
@@ -185,10 +186,11 @@ const Content = () => {
 <div className={styles.container}>
 
    <h3 className={styles.titulo}>Insumos deportivos </h3>
-
+      
    <div className={styles.productosContainer}>
-
-      <div className={styles.producto} data-name="p-1">
+    
+      <a className={styles.producto} href="https://www.youtube.com">
+           
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -197,12 +199,15 @@ const Content = () => {
              layout="responsive"
              className={styles.image}
            />
+           
          <h3>Aro de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
+      
+  
+     
 
-
-      <div className={styles.producto} data-name="p-2">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -213,11 +218,11 @@ const Content = () => {
            />
          <h3>Bolas de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
 
-      <div className={styles.producto} data-name="p-3">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -228,10 +233,10 @@ const Content = () => {
            />
          <h3>Bolas profesionales de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-4">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -242,10 +247,10 @@ const Content = () => {
            />
          <h3>Aro profesional de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-5">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -256,10 +261,10 @@ const Content = () => {
            />
          <h3>Bolsa de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-6">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -270,7 +275,7 @@ const Content = () => {
            />
          <h3>Malla de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
    </div>
 
@@ -284,7 +289,7 @@ const Content = () => {
 
    <div className={styles.productosContainer}>
 
-      <div className={styles.producto} data-name="p-1">
+      <div className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -298,7 +303,7 @@ const Content = () => {
       </div>
 
 
-      <div className={styles.producto} data-name="p-2">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -309,11 +314,11 @@ const Content = () => {
            />
          <h3>Bolas de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
 
-      <div className={styles.producto} data-name="p-3">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -324,10 +329,10 @@ const Content = () => {
            />
          <h3>Bolas profesionales de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-4">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -338,10 +343,10 @@ const Content = () => {
            />
          <h3>Aro profesional de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-5">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -352,10 +357,10 @@ const Content = () => {
            />
          <h3>Bolsa de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
 
-      <div className={styles.producto} data-name="p-6">
+      <a className={styles.producto} href="https://www.youtube.com">
            <Image
              src="/images/spikebrite1.png"
              alt="hola"
@@ -366,7 +371,7 @@ const Content = () => {
            />
          <h3>Malla de roundnet</h3>
          <div className={styles.precio}>₡1.000</div>
-      </div>
+      </a>
 
    </div>
 
