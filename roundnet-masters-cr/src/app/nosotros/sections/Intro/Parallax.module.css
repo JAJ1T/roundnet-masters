@@ -1,0 +1,46 @@
+.intro {
+    height: 100vh;
+    background-color: #f9d42d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Añadido para evitar el desbordamiento de la imagen */
+  }
+  
+  .intro h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    z-index: 2; /* Asegurar que el texto esté sobre la imagen de fondo */
+  }
+  
+  .parallax {
+    height: 100vh;
+    position: relative;
+    background-color: black;
+    overflow: hidden; /* Añadido para evitar el desbordamiento de la imagen */
+  }
+  
+  .parallax h1 {
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1;
+    width: 100%; /* Asegurar que el texto esté centrado correctamente */
+  }
+  
+  .parallax.bg1 {
+    background-size: cover;
+    background-position: center; /* Añadido para centrar la imagen */
+  }
+  
+  .parallax.bg2 {
+    background-size: cover;
+    background-position: center; /* Añadido para centrar la imagen */
+  }
+  

@@ -36,11 +36,13 @@ const Galeria = () => {
   const images5 = [Nash1, Nash2];
   const images6 = [Niko1, Niko2];
   const images7 = [Caleb1, Caleb2];
+  
+  const allImages = [...images, ...images2, ...images3, ...images4, ...images5, ...images6, ...images7];
 
   // Renderiza el componente Carousel con las imágenes proporcionadas
   return (
     <section>
-      <Carousel data={[images, images2, images3, images4, images5,images6, images7]} dataType="images" />
+      <Carousel data={allImages} dataType="images" />
 
       {/**
        * puede tener más de un carrusel en la misma página, simplemente
@@ -48,7 +50,7 @@ const Galeria = () => {
        * Este es un ejemplo de cómo agregar un segundo carrusel.
        * bórrelo cuando ya no lo necesite
        */}
-s    </section>
+    </section>
 
   );
 };
