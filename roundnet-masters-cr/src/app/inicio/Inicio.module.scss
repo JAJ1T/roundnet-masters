@@ -1,0 +1,17 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.social-media {
+    position: fixed;
+    right: 2rem;
+    top: calc(100dvh - 4rem);
+
+    a {
+        margin-left: 0.5rem;
+    }
+
+    i {
+        font-size: 24px;
+        color: $light-text;
+    }
+}
