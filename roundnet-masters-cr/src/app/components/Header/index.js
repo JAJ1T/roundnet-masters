@@ -37,8 +37,8 @@ const Header = () => {
 
         <nav>
           <Link href="/">Inicio</Link>
+          <Link href="/productos">Productos</Link>
           <Link href="/roundnet">Roundnet</Link>
-          <Link href="/productos">Tienda</Link>
           <Link href="/eventos">Eventos</Link>
           <Link href="/nosotros">Nosotros</Link>
         </nav>
