@@ -23,35 +23,25 @@ import Niko2 from './imagenes/imagen6.2.jpg';
 import Caleb1 from './imagenes/imagen7.jpg';
 import Caleb2 from './imagenes/imagen7.2.jpg';
 
-
 // Define el componente Galeria
 const Galeria = () => {
   // Crea un array de imágenes. Puedes agregar más imágenes aquí, simplemente
   // importándolas como se hizo con Axsel1 y Axsel2, y luego añadiéndolas al array.
   // Por ejemplo: const images = [Axsel1, Axsel2, Axsel3, Axsel4];
-  const images = [Lo1, Lo2];
-  const images2 = [Gg1, Gg2];
-  const images3 = [Axsel1, Axsel2];
-  const images4 = [Tony1, Tony2];
-  const images5 = [Nash1, Nash2];
-  const images6 = [Niko1, Niko2];
-  const images7 = [Caleb1, Caleb2];
-  
-  const allImages = [...images, ...images2, ...images3, ...images4, ...images5, ...images6, ...images7];
+  const images = [Lo1, Lo2, Gg1, Gg2, Axsel1, Axsel2, Tony1, Tony2, Nash1, Nash2, Niko1, Niko2, Caleb1, Caleb2];
 
   // Renderiza el componente Carousel con las imágenes proporcionadas
   return (
     <section>
-      <Carousel data={allImages} dataType="images" />
+      <Carousel data={images} dataType="images" />
 
       {/**
-       * puede tener más de un carrusel en la misma página, simplemente
+       * Puedes tener más de un carrusel en la misma página, simplemente
        * agregando otro componente Carousel con diferentes imágenes.
        * Este es un ejemplo de cómo agregar un segundo carrusel.
-       * bórrelo cuando ya no lo necesite
+       * Bórralo cuando ya no lo necesites.
        */}
     </section>
-
   );
 };
 

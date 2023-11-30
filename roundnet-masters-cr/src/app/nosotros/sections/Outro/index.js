@@ -40,13 +40,24 @@ const Outro = () => {
 
       <div className={`${OutroStyles.card} ${OutroStyles.img3}`}>
         <div className={OutroStyles.face + ' ' + OutroStyles.front}>
-          <h3>Lema</h3>
+          <h3>Valores</h3>
         </div>
         <div className={OutroStyles.face + ' ' + OutroStyles.back}>
         <img className={OutroStyles.img1} />
+          <h3>Nuestros valores</h3>
           <p>
-            “Uniendo atletas en toda Costa Rica por medio del deporte y la
-            diversión” -Lourdes Fernández
+          Respeto,
+
+          Trabajo en equipo,
+
+          Diversidad e inclusión,
+
+          Fair Play,
+
+          Pasión y diversión,
+
+          Responsabilidad social,
+ 
           </p>
         </div>
       </div>

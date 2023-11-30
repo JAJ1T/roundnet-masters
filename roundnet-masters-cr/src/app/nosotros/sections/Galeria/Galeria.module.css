@@ -1,14 +1,21 @@
 /* Galeria.module.css */
-.sliderContainer {
-  /* Estilos para el contenedor del carrusel */
-  /* ... */
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre imágenes y títulos */
 }
 
-.image {
-  border-radius: 50%; /* Hace que la imagen sea circular */
-  overflow: hidden; /* Asegura que la imagen se ajuste al círculo */
-  width: 200px; /* Ajusta el tamaño de la imagen */
-  height: 200px; /* Ajusta el tamaño de la imagen */
-  object-fit: cover; /* Asegura que la imagen se ajuste dentro del círculo */
-  margin: 10px; /* Espacio entre las imágenes */
+.imageItem {
+  text-align: center;
 }
+
+.circularImage {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px; /* Ajusta el margen según sea necesario */
+}
+
+/* Añade más estilos según sea necesario */

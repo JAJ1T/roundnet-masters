@@ -1,10 +1,11 @@
-import Content from "./content/content";
+import Content from "./content/contents";
+
 
 const productos = () => {
     return ( 
-        <>
-            <Content />
-        </>
+        <main>
+        <Content />
+        </main>
      );
 }
  
