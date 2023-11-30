@@ -93,90 +93,67 @@ const Content = () => {
 
    <div className={styles.productosContainer}>
 
-      <Link className={styles.producto} href="/producto1">
+   <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/rookie.jpg"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Aro de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Rookie Kit</h3>
+         <div className={styles.precio}>₡42.458</div>
+      </a>
+
+
+      <Link className={styles.producto} href="/vender/Kits/AroStandard">
+           <Image
+             src="/images/productos/standard.jpg"
+             alt="hola"
+             width={100}
+             height={500}
+             layout="responsive"
+             className={styles.image}
+           />
+         <h3>Standard Kit</h3>
+         <div className={styles.precio}>₡63.440</div>
       </Link>
 
 
       <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/pro.jpeg"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Bolas de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Pro kit</h3>
+         <div className={styles.precio}>₡84.798</div>
       </a>
 
 
 
       <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/spikebrite1.png"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Bolas profesionales de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Spikebrite</h3>
+         <div className={styles.precio}>₡76.488</div>
       </a>
 
 
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Aro profesional de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
 
 
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Bolsa de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
 
-
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Malla de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
-
+     
    </div>
 
 </div>
@@ -188,94 +165,64 @@ const Content = () => {
    <h3 className={styles.titulo}>Insumos deportivos </h3>
       
    <div className={styles.productosContainer}>
-    
-      <a className={styles.producto} href="https://www.youtube.com">
-           
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-           
-         <h3>Aro de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
       
-  
+      <a className={styles.producto} href="https://www.youtube.com">
+           
+           <Image
+             src="/images/productos/standard balls.jpg"
+             alt="hola"
+             width={100}
+             height={500}
+             layout="responsive"
+             className={styles.image}
+           />
+           
+         <h3>2 Bolas standard</h3>
+         <div className={styles.precio}>₡15.240</div>
+      </a>
+
+      <a className={styles.producto} href="https://www.youtube.com">
+           <Image
+             src="/images/productos/pro balls.jpg"
+             alt="hola"
+             width={100}
+             height={500}
+             layout="responsive"
+             className={styles.image}
+           />
+         <h3>2 Bolas pro</h3>
+         <div className={styles.precio}>₡19.520</div>
+      </a>
+
+      <a className={styles.producto} href="https://www.youtube.com">
+           
+           <Image
+             src="/images/productos/dark balls.jpg"
+             alt="hola"
+             width={100}
+             height={500}
+             layout="responsive"
+             className={styles.image}
+           />
+           
+         <h3>2 Bolas Brillantes</h3>
+         <div className={styles.precio}>₡22.272</div>
+      </a>      
+
+      <a className={styles.producto} href="https://www.youtube.com">
+           <Image
+             src="/images/productos/repuestos.png"
+             alt="hola"
+             width={100}
+             height={500}
+             layout="responsive"
+             className={styles.image}
+           />
+         <h3>Repuestos de kit</h3>
+         <div className={styles.precio}>₡39.780</div>
+      </a>
+
      
-
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Bolas de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
-
-
-
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Bolas profesionales de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
-
-
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Aro profesional de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
-
-
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Bolsa de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
-
-
-      <a className={styles.producto} href="https://www.youtube.com">
-           <Image
-             src="/images/spikebrite1.png"
-             alt="hola"
-             width={100}
-             height={500}
-             layout="responsive"
-             className={styles.image}
-           />
-         <h3>Malla de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
-      </a>
 
    </div>
 
@@ -291,86 +238,86 @@ const Content = () => {
 
       <div className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/spikebrite1.png"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Aro de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Camisa Sele rojo</h3>
+         <div className={styles.precio}>₡15.000</div>
       </div>
 
 
       <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/spikebrite1.png"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Bolas de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Camisa sele blanco</h3>
+         <div className={styles.precio}>₡15.000</div>
       </a>
 
 
 
       <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/spikebrite1.png"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Bolas profesionales de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Camisa blanca 1</h3>
+         <div className={styles.precio}>₡10.000</div>
       </a>
 
 
       <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/spikebrite1.png"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Aro profesional de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Camisa blanca 2</h3>
+         <div className={styles.precio}>₡10.000</div>
       </a>
 
 
       <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/spikebrite1.png"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Bolsa de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Camisa negra 1</h3>
+         <div className={styles.precio}>₡10.000</div>
       </a>
 
 
       <a className={styles.producto} href="https://www.youtube.com">
            <Image
-             src="/images/spikebrite1.png"
+             src="/images/productos/spikebrite1.png"
              alt="hola"
              width={100}
              height={500}
              layout="responsive"
              className={styles.image}
            />
-         <h3>Malla de roundnet</h3>
-         <div className={styles.precio}>₡1.000</div>
+         <h3>Camisa negra 2</h3>
+         <div className={styles.precio}>₡10.000</div>
       </a>
 
    </div>
