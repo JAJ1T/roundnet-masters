@@ -65,7 +65,7 @@ const Content = () => {
         <h3>Nuevo producto en la tienda</h3>
         <h1>Spike brite</h1>
         <p>Especial para aquellos que quieran jugar en la noche y disfrutar de las luces que el spike brite tiene, mayor diversion para ti y tus amigos</p>
-        <a href="#" className={styles.anuncioBoton}>mas detalles</a>
+        <a href="https://www.youtube.com" className={styles.anuncioBoton}>mas detalles</a>
 
     </div>
     <Image
