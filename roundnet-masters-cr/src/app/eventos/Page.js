@@ -17,21 +17,26 @@ const myEventsList = [
     end: new Date(),
   },
   {
-    title: "Evento en el C.T.P Alajuelita",
+    title: "Evento en el C.T.P de Alajuelita",
     start: new Date("2023-11-29T11:00:00"),
-    end: new Date("2023-11-29T1:00:00"),
+    end: new Date("2023-11-29T01:00:00"),
   },
   {
     title: "Evento en la Escuela la Lia",
-    start: new Date("2023-11-30T11:00:00"),
-    end: new Date("2023-11-30T1:00:00"),
+    start: new Date("2023-11-30T07:00:00"),
+    end: new Date("2023-11-30T11:20:00"),
+  },
+  {
+    title: "Evento en la Escuela la Lia",
+    start: new Date("2023-12-25T07:00:00"),
+    end: new Date("2023-12-30T11:20:00"),
   },
 ];
 
 class EventsCalendar extends Component {
   render() {
     return (
-      <div style={{ height: "400px" }} className="bigCalendar-container">
+      <div style={{ height: "600px", padding: "10px" }} className="bigCalendar-container">
         <Calendar
           localizer={localizer}
           events={myEventsList}
