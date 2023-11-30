@@ -1,10 +1,16 @@
 @import "~@fontsource/poppins/index.css";
+@import "~@fontsource/poppins/700.css";
+@import "~@fontsource/anton";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Poppins, sans-serif;
+}
+
+body {
+  position: relative;
 }
 
 a {
@@ -17,10 +23,16 @@ a {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  position: relative;
 }
 
 .root-layout main {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+
+section{
+    padding:3rem 9%;
 }

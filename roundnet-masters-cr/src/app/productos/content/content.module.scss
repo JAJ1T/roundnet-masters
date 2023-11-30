@@ -1,0 +1,232 @@
+@import '/src/app/styles/variables';
+
+.introduccion {
+    background: url(./imagenes/Aro.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    z-index: -1;
+    padding:5rem 0;
+  
+    h2{
+        color: #fff;
+
+    }
+
+    h4{
+        color: #fff;
+    }
+    
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor de "0.5" para ajustar la opacidad */
+    pointer-events: none; 
+    z-index: -1;
+  }
+  
+   div{
+    text-align: center;
+  
+  
+    h3{
+    font-size: 2rem;
+    color:#fff;
+    padding-bottom: .7rem;
+    margin-left: 4rem;
+    font-weight: normal;
+  }
+}
+  
+   .btn{
+    margin-top: .7rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    margin-left: 2rem;
+    color:#fff;
+    background:#f9d42d;
+    font-size: 1rem;
+    font-weight: 500;
+  
+  
+  &:hover{
+    background:#1d2f3d;
+  }
+  }
+}
+  
+  
+
+
+.iconsContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap:1rem;
+
+
+.icons{
+  display: flex;
+  align-items: center;
+  gap:1.5rem;
+  padding:1rem 0;
+
+
+i{
+  font-size: 2.5rem;
+  color: #f9d42d;
+}
+
+h3{
+  font-size: 1.2rem;
+  color:#1d2f3d;
+  padding-bottom: .5rem;
+}
+
+p{
+  font-size: 1rem;
+  color:#1d2f3d;
+}
+}
+}
+
+
+
+.anuncio{
+  background:#111111;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:1.5rem;
+
+
+.content{
+  flex:1 1 22rem;
+
+
+h3{
+  color:#f9d42d;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+h1{
+  color:#fff;
+  font-size: 3rem;
+}
+
+p{
+  padding:1rem 0;
+  color:#fff;
+  font-size: 1rem;
+
+}
+
+.anuncioBoton{
+  margin-top: 1rem;
+  display:inline-block;
+  padding:.9rem 3rem;
+  border-radius: .5rem;
+  color: #111111;
+  background:#f9d42d;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+
+
+&:hover{
+  background:#1d2f3d;
+}
+}
+}
+.imagen{
+  flex: 1 1 7rem;
+  width: 100%;
+  height: auto;
+  }
+
+}
+
+
+
+
+
+
+/*----------------------------------*/
+/* Los productos y el contenido */
+/*----------------------------------*/
+.container{
+ max-width: 100%;
+ margin:0 auto;
+ padding:2rem 2rem;
+
+
+
+.presentacion{
+  border-radius: 20px;
+  background-color: #111111;
+  color: #fff;
+  padding: 30px;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.titulo{
+
+ font-size: 3rem;
+ margin-bottom: 2rem;
+ text-transform: uppercase;
+ text-align: center;
+ color: #1d2f3d;
+}
+
+.productosContainer{
+ display: grid;
+ grid-template-columns:  repeat(3, 1fr);
+ gap: 1rem;
+
+
+.producto{
+ text-align: center;
+ padding:2rem 5rem;
+ outline: .1rem solid rgba(0,0,0,.2);
+ outline-offset: -1rem;
+ transition: .4s;
+ cursor: pointer;
+
+
+
+&:hover{
+ outline: .3rem solid #1d2f3d;
+ outline-offset: 0;
+}
+
+
+h3{
+ padding:.5rem 0;
+ font-size: 1.5rem;
+}
+
+&:hover h3{
+ color: #f9d42d;
+}
+
+.precio{
+ font-size: 1.5rem;
+ color:#111;
+}
+}
+.image{
+  width: 100%;
+  height: auto;
+}
+}
+}

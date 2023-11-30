@@ -5,7 +5,7 @@ import { faToggleOn, faToggleOff } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './ThemeToggle.module.scss';
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ color }) => {
   const { theme, toggleTheme } = useTheme();
   const isDarkTheme = theme === 'dark';
   return (
@@ -14,10 +14,10 @@ const ThemeToggle = () => {
       className={`${styles['theme-toggle']} ${
         isDarkTheme ? styles.dark : styles.light
       }`}
+      style={{ color: color }}
     >
       <FontAwesomeIcon
         icon={isDarkTheme ? faToggleOn : faToggleOff}
-        size="xl"
         className={styles['theme-toggle-icon']}
       />
     </button>
