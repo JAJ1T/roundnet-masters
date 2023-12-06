@@ -1,0 +1,79 @@
+@import './variables';
+
+.title {
+  font-family: $font-family-heading;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title_h1 {
+  @extend .title;
+  font-size: 4.5rem;
+}
+
+.title_h2 {
+  @extend .title;
+  font-size: 4rem;
+}
+
+.title_h3 {
+  @extend .title;
+  font-size: 3.5rem;
+}
+
+.title_h4 {
+  @extend .title;
+  font-size: 3rem;
+}
+
+.title_h5 {
+  @extend .title;
+  font-size: 2.5rem;
+}
+
+.title_h6 {
+  @extend .title;
+  font-size: 2rem;
+}
+
+// Define breakpoints for responsive design.
+// These are the widths at which the layout will change to adapt to different screen sizes.
+$breakpoints: (
+  sm: 480px,  // Small devices (phones)
+  md: 768px,  // Medium devices (tablets)
+  lg: 1024px, // Large devices (desktops)
+  xl: 1200px  // Extra large devices (large desktops)
+);
+
+// Mixin for responding to various breakpoints.
+// It uses media queries to apply styles at specified breakpoints.
+@mixin respond-to($breakpoint) {
+  // Check if the given breakpoint exists in the $breakpoints map.
+  @if map-has-key($breakpoints, $breakpoint) {
+    // If breakpoint exists, create a media query for it.
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      // Include the styles passed into the mixin.
+      @content;
+    }
+  }
+  // If the breakpoint does not exist, output a warning.
+  @else {
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+  }
+}
+
+// Example usage of the mixin.
+.element-example {
+  // Base mobile styles go here.
+  font-size: 14px;
+
+  // Styles for medium devices (tablets).
+  @include respond-to(md) {
+    font-size: 16px;
+  }
+
+  // Styles for large devices (desktops).
+  @include respond-to(lg) {
+    font-size: 18px;
+  }
+}

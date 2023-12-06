@@ -1,52 +1,37 @@
-.intro {
+/* Intro.module.css */
+
+.parallaxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.parallaxLayer {
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  background-color: #f9d42d;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-.intro h1 {
-  text-align: center; /* Centrar el texto horizontalmente */
-  font-size: 2rem; /* Tamaño de fuente */
-  font-family: 'Poppins', sans-serif; /* Fuente personalizada */
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.parallax {
-  height: 100vh;
-  position: relative;
-  background-color: black;
+.bg1 {
+  background-color: #f9d42d;
 }
 
-.parallax::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.bg2 {
+  background-image: url('./Inicio.jpg');
 }
 
-.parallax h1 {
-  color: white;
+.bg3 {
+  background-image: url('./equipo.jpg');
+}
+
+.parallaxLayer h1 {
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  position: relative;
-  z-index: 1;
-}
-
-.parallax.bg1::after {
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/images/nosotros/Inicio.jpg');
-  background-size: cover;
-}
-
-.parallax.bg2::after
-{ 
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0  , .7)), url('/images/nosotros/Nosotros.jpg');
-  background-size: cover;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  z-index: 2; /* Asegurar que el texto esté sobre la imagen de fondo */
 }

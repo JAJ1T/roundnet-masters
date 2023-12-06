@@ -3,7 +3,6 @@ import styles from './Footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons'
-import ThemeBackground from '../ThemeBackground';
 
 const Footer = () => {
   return (
